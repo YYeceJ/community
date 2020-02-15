@@ -12,10 +12,9 @@ import org.springframework.ui.Model;
  * PACKAGE_NAME:com.yyece.mycommunity.Controller
  */
 @Controller
-public class HelloController {
-    @GetMapping("/hello")
-    public String hello(@RequestParam(name = "name") String name,Model model) {
-        model.addAttribute("name",name);
-        return "hello";
+public class IndexController {
+    @GetMapping("/")
+    public String hello() {
+        return "index";
     }
 }
